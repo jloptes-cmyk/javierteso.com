@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Javier L. Teso</title>
+<meta name="description" content="Contact screenwriter and director Javier L. Teso.">
+<meta property="og:title" content="Contact — Javier L. Teso">
+<meta property="og:description" content="Production enquiries, representation, collaborations and screenplay requests.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://javierteso.com/contact/">
+<meta property="og:image" content="https://javierteso.com/assets/javier-profile.webp">
+<link rel="canonical" href="https://javierteso.com/contact/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body data-page="contact">
+<header class="site-header">
+<nav class="nav shell" aria-label="Main navigation" data-i18n-aria="nav.label">
+<a class="brand" href="/">JAVIER L. TESO</a>
+<button class="menu-button" aria-label="Open menu" data-i18n-aria="nav.open" aria-expanded="false">
+<span>
+</span>
+<span>
+</span>
+</button>
+<div class="nav-links">
+<a href="/#work" data-i18n="nav.work">WORK</a>
+<a href="/about/" data-i18n="nav.about">ABOUT</a>
+<a href="/contact/" data-i18n="nav.contact">CONTACT</a>
+</div>
+<button class="language-toggle" type="button" aria-label="Switch to Spanish" data-i18n-aria="language.switch"><span class="lang-en">EN</span><span aria-hidden="true">/</span><span class="lang-es">ES</span></button>
+</nav>
+</header>
+<main class="contact-page">
+<section class="shell">
+<p class="eyebrow" data-i18n="nav.contact">CONTACT</p>
+<h1 data-i18n="contact.headingPlain">LET'S TALK</h1>
+<div class="contact-details">
+<div>
+<p data-i18n="contact.intro">For production enquiries, representation, collaborations or screenplay requests, feel free to get in touch.</p>
+<div class="signature">JAVIER L. TESO<span data-i18n-html="general.signature">Screenwriter · Director<br>Barcelona, Spain</span>
+</div>
+</div>
+<form class="contact-form" id="contact-form" action="https://formspree.io/f/xnpnvwpd" method="POST" novalidate>
+<div class="form-field"><label for="contact-name" data-i18n="contact.name">NAME</label><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="120" required><span class="field-error" data-error-for="name" aria-live="polite"></span></div>
+<div class="form-field"><label for="contact-email" data-i18n="contact.email">EMAIL</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required><span class="field-error" data-error-for="email" aria-live="polite"></span></div>
+<div class="form-field"><label for="contact-company" data-i18n="contact.company">COMPANY / ORGANISATION <span data-i18n="contact.optional">(OPTIONAL)</span></label><input id="contact-company" name="company" type="text" autocomplete="organization" maxlength="160"></div>
+<div class="form-field"><label for="contact-reason" data-i18n="contact.reason">REASON FOR CONTACT</label><select id="contact-reason" name="reason" required><option value="" data-i18n="contact.reason.placeholder">SELECT A REASON</option><option value="Production enquiry" data-i18n="contact.reason.production">Production enquiry</option><option value="Representation" data-i18n="contact.reason.representation">Representation</option><option value="Collaboration" data-i18n="contact.reason.collaboration">Collaboration</option><option value="Screenplay / pitch deck request" data-i18n="contact.reason.materials">Screenplay / pitch deck request</option><option value="Other professional enquiry" data-i18n="contact.reason.other">Other professional enquiry</option></select><span class="field-error" data-error-for="reason" aria-live="polite"></span></div>
+<div class="form-field"><label for="contact-project" data-i18n="contact.project">PROJECT <span data-i18n="contact.optional">(OPTIONAL)</span></label><select id="contact-project" name="project"><option value="" data-i18n="contact.project.placeholder">NO SPECIFIC PROJECT</option><option value="The Executioner's Room" data-i18n="contact.project.verdugo">The Executioner's Room</option><option value="Back in Gear" data-i18n="contact.project.volver">Back in Gear</option><option value="Genpets">Genpets</option></select></div>
+<div class="form-field"><label for="contact-message" data-i18n="contact.message">MESSAGE</label><textarea id="contact-message" name="message" rows="6" maxlength="5000" required></textarea><span class="field-error" data-error-for="message" aria-live="polite"></span></div>
+<div class="form-honeypot" aria-hidden="true"><label for="contact-website">Website</label><input id="contact-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
+<input type="hidden" name="_subject" value="New professional enquiry — Javier L. Teso">
+<p class="contact-filter" data-i18n="contact.filter">Please note: this form is not intended for distribution, marketing, promotional, festival submission or paid publicity services.</p>
+<div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+<button class="form-submit" type="submit" data-i18n="contact.submit">SEND MESSAGE →</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="shell">
+<span>© 2026 Javier L. Teso</span>
+<a href="/contact/" data-i18n="nav.contact">CONTACT</a>
+</div>
+</footer>
+<script src="/site.js">
+</script>
+</body>
+</html>

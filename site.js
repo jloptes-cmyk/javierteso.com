@@ -57,10 +57,10 @@ function setLanguage(lang){
   });
   const page=document.body.dataset.page,m=metadata[page]?.[lang];if(m){document.title=m.title;setMeta('meta[name="description"]',m.description);setMeta('meta[property="og:title"]',m.ogTitle);setMeta('meta[property="og:description"]',m.ogDescription)}
   let locale=document.querySelector('meta[property="og:locale"]');if(!locale){locale=document.createElement('meta');locale.setAttribute('property','og:locale');document.head.append(locale)}locale.content=spanish?'es_ES':'en_GB';
-  try{localStorage.setItem('jlt-language',lang)}catch(e){}
+  try{localStorage.setItem('jlt-language-v2',lang)}catch(e){}
 }
 
-let language='en';try{language=localStorage.getItem('jlt-language')==='es'?'es':'en'}catch(e){}setLanguage(language);
+let language='es';try{const savedLanguage=localStorage.getItem('jlt-language-v2');language=savedLanguage==='en'||savedLanguage==='es'?savedLanguage:'es'}catch(e){}setLanguage(language);
 const header=document.querySelector('.site-header'),menu=document.querySelector('.menu-button'),links=document.querySelector('.nav-links');
 function updateHeader(){header?.classList.toggle('scrolled',scrollY>24)}updateHeader();addEventListener('scroll',updateHeader,{passive:true});
 menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true',next=!open;menu.setAttribute('aria-expanded',String(next));menu.setAttribute('aria-label',next?(document.documentElement.lang==='es'?translations['nav.close']:'Close menu'):(document.documentElement.lang==='es'?translations['nav.open']:'Open menu'));links?.classList.toggle('open',next);header?.classList.toggle('menu-open',next)});
